@@ -2071,6 +2071,12 @@ input:-webkit-autofill {
     height: 55px;
   }
 
+  .social-line {
+    width: 2px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
   .nav-elements {
     opacity: 0;
     display: none;
