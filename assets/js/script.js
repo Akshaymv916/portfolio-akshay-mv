@@ -93,3 +93,6 @@ document.getElementById("whatsappButton").onclick = function() {
   // Replace 'Hello, I need help with an issue!' with your desired pre-filled message.
   window.location.href = "https://wa.me/7994669916?text=Hello,%20I%20need%20help%20with%20an%20issue!";
 }
+
+
+
