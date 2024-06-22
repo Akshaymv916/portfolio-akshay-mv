@@ -1,3 +1,17 @@
+/**
+ * @author Aromal Anil <aromalanilkannan@gmail.com>
+ */
+
+
+//Hiding the Preloader
+$('body').css("overflow", "hidden");
+$(window).on('load', () => {
+  $('.loader').fadeOut();
+  $('.loader-body').delay(350).fadeOut('slow');
+  $('body').delay(350).css({ 'overflow': 'visible' });
+});
+
+
 
 $(document).ready(() => {
 
@@ -39,6 +53,25 @@ $(document).ready(() => {
   });
 
 
+  //Changing Title Effect
+  const b = baffle(".title");
+  b.set({
+    characters: '█<▓ ░█▒█▒ ░▒/░█ ▓▒▓ █/██▒ █▓█/ █▒█ ░█▒█ ▓░█▒',
+    speed: 120
+  });
+
+  var i = 1;
+  let changeTitle = () => {
+    let titles = ["Web Developer", "Graphic Designer", "Programmer"];
+    if (i == titles.length) {
+      i = 0;
+    }
+    b.text(currentText => titles[i]).reveal(1500);
+    i++;
+  }
+
+  setInterval(changeTitle, 3200);
+
 
   //Setting Activate Tab in About Section
   viewTab('skills', "skill-head");
@@ -55,6 +88,10 @@ $(document).ready(() => {
     $('.card-content').not(thisCardContent).removeClass('view-card-details');
 
   });
+
+
+  //Hiding extra cards in Portfolio
+  
 
 });
 
@@ -86,12 +123,6 @@ function viewProjectTab(tabName, tabHead) {
   $('.project-content').css({ display: "none" });
   $('.' + tabName).css({ display: "grid" });
 
-}
-
-document.getElementById("whatsappButton").onclick = function() {
-  // Replace '1234567890' with your actual phone number in international format.
-  // Replace 'Hello, I need help with an issue!' with your desired pre-filled message.
-  window.location.href = "https://wa.me/7994669916?text=Hello,%20I%20need%20help%20with%20an%20issue!";
 }
 
 

@@ -574,11 +574,14 @@ li {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   overflow: hidden;
+ 
 }
 
-.hidden-card {
+.hidden{
   display: none;
 }
+
+
 
 .project-img {
   width: 100%;
