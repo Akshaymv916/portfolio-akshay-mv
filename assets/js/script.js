@@ -1,6 +1,3 @@
-/**
- * @author Aromal Anil <aromalanilkannan@gmail.com>
- */
 
 
 //Hiding the Preloader
@@ -53,24 +50,7 @@ $(document).ready(() => {
   });
 
 
-  //Changing Title Effect
-  const b = baffle(".title");
-  b.set({
-    characters: '█<▓ ░█▒█▒ ░▒/░█ ▓▒▓ █/██▒ █▓█/ █▒█ ░█▒█ ▓░█▒',
-    speed: 120
-  });
-
-  var i = 1;
-  let changeTitle = () => {
-    let titles = ["Web Developer", "Graphic Designer", "Programmer"];
-    if (i == titles.length) {
-      i = 0;
-    }
-    b.text(currentText => titles[i]).reveal(1500);
-    i++;
-  }
-
-  setInterval(changeTitle, 3200);
+  
 
 
   //Setting Activate Tab in About Section

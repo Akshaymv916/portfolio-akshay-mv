@@ -313,6 +313,11 @@ li {
   align-items: center;
 }
 
+.btn-primary{
+  box-shadow: 0 0 15px var(--light-red);
+  transform: translate(-10px);
+}
+
 .socialmedia{
   align-items: center;
   margin-top: 1rem;
@@ -344,7 +349,8 @@ li {
 }
 
 .btn:hover {
-  box-shadow: 5px 6px 12px 4px rgba(0, 0, 0, 0.31);
+  box-shadow: 2px 2px 20px 2px var(--dim-white);
+  transform: translate(-2px);
 }
 
 .primary {
@@ -383,9 +389,18 @@ li {
   flex-basis: 60%;
 }
 
-.about-img {
+.about-img{
   flex-basis: 40%;
   height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 14px var(--light-red);
+  border-radius: 50%;
+}
+
+.about-img:hover{
+  box-shadow: 0 0 90px var(--light-red);
+  transform: translate(-18px);
+
 }
 
 .about-brief {
@@ -499,6 +514,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 .all-works,
@@ -510,6 +526,15 @@ li {
   gap: 30px;
   margin-top: 6rem;
   width: 100%;
+}
+
+.project-card{
+  box-shadow: 0 0 10px var(--light-red);
+}
+
+.project-card:hover{
+  box-shadow: 2px 0 20px 3px var(--light-red);
+
 }
 
 
@@ -2114,6 +2139,10 @@ input:-webkit-autofill {
     font-size: 3rem;
   }
 
+  .nav-link a:hover {
+    color: var(--red);
+  }
+
   #nav-btn {
     background-color: #11233f;
     margin-left: 0px;
@@ -2159,6 +2188,11 @@ input:-webkit-autofill {
     margin-top: 3rem;
     justify-content: center;
   }
+
+  .btn:hover {
+      box-shadow: 2px 2px 20px 2px var(--dim-white);
+      transform: translate(-2px);
+    }
 
   .main-img {
     position: static;
