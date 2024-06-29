@@ -2229,6 +2229,14 @@ input:-webkit-autofill {
     width: 70vw;
     object-fit: cover;
   }
+
+  
+.about-img:hover{
+  box-shadow: 0 0 90px var(--light-red);
+  transform: translate(-18px);
+
+}
+
   .about-brief h1 {
     margin-top: 30px;
   }
