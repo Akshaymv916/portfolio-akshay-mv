@@ -1242,11 +1242,7 @@ li {
   grid-template-columns: 36rem;
 }
 
-.web-works,
-.android-works,
-.other-works {
-  display: none;
-}
+
 
 .project-tabs {
   margin-top: 5rem;
@@ -2379,11 +2375,6 @@ input:-webkit-autofill {
     margin-top: 4rem;
   }
 
-  .portfolio .tabs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 
 @media only screen and (min-height: 580px) and (max-width: 500px) {
