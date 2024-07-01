@@ -425,6 +425,22 @@ li {
   margin-left: -15px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+#portfolio .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#portfolio .tabs li{
+  margin-top: 24px;
+}
+
+#portfolio h3{
+  font-size: 16px;
+}
+
 .tab {
   position: relative;
   cursor: pointer;
@@ -509,6 +525,20 @@ li {
   color: var(--secondary-head);
 }
 
+
+.portfolio .tab::after{
+  max-width: 80px;
+}
+
+.portfolio .active::after{
+  max-width: 150px;
+}
+
+.portfolio .active.tab{
+  color:var(--light-red);
+}
+
+
 .works {
   width: 100%;
   display: flex;
@@ -531,6 +561,9 @@ li {
 .project-card{
   box-shadow: 0 0 10px var(--light-red);
 }
+
+
+
 
 .project-card:hover{
   box-shadow: 2px 0 20px 3px var(--light-red);
@@ -2344,6 +2377,12 @@ input:-webkit-autofill {
   }
   .project-tabs {
     margin-top: 4rem;
+  }
+
+  .portfolio .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

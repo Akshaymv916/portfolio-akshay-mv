@@ -88,6 +88,28 @@ function viewTab(tabName, tabHead) {
   $('.' + tabName).css({ display: "block" });
 }
 
+function viewProject(tabName, tabHead) {
+  $('.tab').removeClass('active');
+  $('#' + tabHead).toggleClass('active');
+
+  $('.tab').css({ color: "var(--primary-text)" });
+  $('#' + tabHead).css({ color: "var(--red)" });
+
+  $('.project-content').css({ display: "none" });
+  $('.' + tabName).css({ display: "grid" });
+}
+
+function viewallProject(tabHead){
+
+  $('.tab').removeClass('active');
+  $('#' + tabHead).toggleClass('active');
+
+  $('.tab').css({ color: "var(--primary-text)" });
+  $('#' + tabHead).css({ color: "var(--red)" });
+  
+  $('.project-content').css({ display: "grid" });
+}
+
 
 
 function viewProjectTab(tabName, tabHead) {
@@ -106,4 +128,10 @@ function viewProjectTab(tabName, tabHead) {
 }
 
 
+var x=document.getElementById("mainprj");
+var y=document.getElementById("miniprj");
 
+function miniproject(){
+  y.style.display="block";
+  x.style.display="none";
+}

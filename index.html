@@ -186,11 +186,18 @@
         <h2>My Projects</h2>
         <h3>Get To Know My Recent projects</h3>
 
+        <ul class="tabs">
+            <li class="tab allprj" id="all-prj" onclick="viewallProject('all-prj')">All Projects</li>
+            <li class="tab" id="main-head" onclick="viewProject('mainprj','main-head')">Main Projects</li>
+            <li class="tab" id="mini-head" onclick="viewProject('miniprj','mini-head')">Mini Projects</li>
+
+        </ul>
+
         <div class="works">
 
-            <div class="web-works project-content">
+            <div class="web-works project-content mainprj">
 
-                <div class="project-card">
+                <div class="project-card mainprj">
                     <img src="./assets/images/moviflix.png" alt="movieflix" class="project-img">
                     <div class="card-content">
                         <h4>MalluFlix</h4>
@@ -210,8 +217,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
+                <div class="project-card mainprj">
                     <img src="./assets/images/Screenshot (211).png" alt="movieflix" class="project-img">
                     <div class="card-content">
                         <h4>Auto Smart | Car Selling </h4>
@@ -231,9 +237,7 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="project-card">
+                <div class="project-card mainprj">
                     <img src="./assets/images/booking.png" alt="booking" class="project-img">
                     <div class="card-content">
                         <h4>Movie-Booking</h4>
@@ -252,9 +256,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+
+            <div class="web-works project-content miniprj">
                 
-                <div class="project-card">
+                <div class="project-card miniprj">
                     <img src="./assets/images/doctor.png" alt="doctor" class="project-img">
                     <div class="card-content">
                         <h4>Doctor-Appointment-Booking</h4>
@@ -274,8 +281,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
+                <div class="project-card miniprj">
                     <img src="./assets/images/weather.png" alt="Jwtauth" class="project-img">
                     <div class="card-content">
                         <h4>React-weather-app</h4>
@@ -294,8 +300,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
+                <div class="project-card miniprj">
                     <img src="./assets/images/Screenshot (60).png" alt="doctor" class="project-img">
                     <div class="card-content">
                         <h4>Quiz App</h4>
@@ -317,6 +322,7 @@
                 </div>
 
             </div>
+           
 
             &nbsp;&nbsp;
         </div>
@@ -342,6 +348,7 @@
             </div>
         </div>
     </section>
+
 
 </body>
 
