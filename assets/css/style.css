@@ -2374,6 +2374,11 @@ input:-webkit-autofill {
   .project-tabs {
     margin-top: 4rem;
   }
+  .portfolio .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
 
