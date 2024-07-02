@@ -2448,13 +2448,13 @@ input:-webkit-autofill {
     padding-top:30px;
     position: relative;
     right: 170px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .loader-body .loader-cont{
-    font-size: 13.5px;
+    font-size: 13px;
     position:relative;
-    bottom: 10px;
+    bottom: 7px;
     left: 45px;
   }
 }
