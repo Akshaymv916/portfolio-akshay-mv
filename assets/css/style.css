@@ -2390,7 +2390,7 @@ input:-webkit-autofill {
   .loader-body .loader-name{
     padding-top:30px;
     position: relative;
-    right: 240px;
+    right: 230px;
     font-size: 15px;
   }
   .loader-body .loader-cont{

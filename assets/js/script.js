@@ -4,8 +4,8 @@
 $('body').css("overflow", "hidden");
 $(window).on('load', () => {
   $('.loader').fadeOut();
-  $('.loader-body').delay(850).fadeOut('slow');
-  $('body').delay(50).css({ 'overflow': 'visible' });
+  $('.loader-body').delay(1150).fadeOut('slow');
+  $('body').delay(100).css({ 'overflow': 'visible' });
 });
 
 
