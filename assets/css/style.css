@@ -2447,15 +2447,15 @@ input:-webkit-autofill {
   .loader-body .loader-name{
     padding-top:30px;
     position: relative;
-    right: 170px;
+    right: 130px;
     font-size: 12px;
   }
 
   .loader-body .loader-cont{
-    font-size: 13px;
+    font-size: 10px;
     position:relative;
-    bottom: 7px;
-    left: 45px;
+    bottom: 4px;
+    left: 40px;
   }
 }
 
