@@ -127,11 +127,39 @@ function viewProjectTab(tabName, tabHead) {
 
 }
 
+function viewProject(showClass, activeId) {
+    // Hide all sections
+    const allSections = document.querySelectorAll('.project-content');
+    allSections.forEach(section => section.style.display = 'none');
+
+    // Show selected section
+    const selectedSection = document.querySelector('.' + showClass);
+    if (selectedSection) {
+      selectedSection.style.display = 'grid';
+    }
+
+    // Remove active class from all tabs
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active-project'));
+
+    // Add active class to current tab
+    const currentTab = document.getElementById(activeId);
+    if (currentTab) {
+      currentTab.classList.add('active-project');
+    }
+  }
+
+  // Set default view
+  window.onload = () => {
+    viewProject('mainprj', 'main-head');
+  };
 
 var x=document.getElementById("mainprj");
 var y=document.getElementById("miniprj");
+var z=document.getElementById("figmaprj");
+
+
 
 function miniproject(){
   y.style.display="block";
-  x.style.display="none";
+  x.style.display="block";
 }
